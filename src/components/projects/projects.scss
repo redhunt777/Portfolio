@@ -1,0 +1,18 @@
+.projects {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+
+    .progressBar {
+      height: 10px;
+      background-color: #fff;
+    }
+  }
+}
