@@ -35,6 +35,14 @@
     position: relative;
     z-index: 0;
 
+    .success {
+      background-color: transparent;
+      position: absolute;
+      margin: auto;
+      z-index: 0;
+      stroke: green;
+    }
+
     .phoneSvg {
       background-color: transparent;
       position: absolute;
@@ -68,6 +76,13 @@
         width: 100px;
         padding: 10px;
         font-weight: 500;
+      }
+      .error {
+        color: red;
+        margin: 0;
+        span {
+          color: white;
+        }
       }
       textarea {
         background-color: transparent;
