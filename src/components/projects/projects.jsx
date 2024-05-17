@@ -38,7 +38,6 @@ const Single = ({ items }) => {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-  //i want a blur effect on the text container when the user scrolls down
   const filter = useTransform(
     scrollYProgress,
     [0, 0.5, 0.8, 1],
@@ -54,7 +53,6 @@ const Single = ({ items }) => {
               src={items.img}
               alt="image of the given website"
               ref={ref}
-              style={{ filter: filter }}
             />
           </div>
           <motion.div
