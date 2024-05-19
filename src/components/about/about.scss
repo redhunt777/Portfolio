@@ -1,0 +1,58 @@
+.about {
+  section {
+    background: #111132;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .classContainer {
+      width: 60%;
+      margin-bottom: 5%;
+      .container {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 12px;
+        box-shadow: inset 2px -1px 3px 0px;
+
+        h1 {
+          text-align: center;
+          color: orange;
+          font-size: 3rem;
+          padding: 20px;
+        }
+        p {
+          color: white;
+          text-align: justify;
+          font-size: 1.5rem;
+          padding: 20px;
+        }
+      }
+    }
+    .scroll {
+      position: absolute;
+      bottom: 15%;
+      width: 80%;
+      .prev {
+        position: absolute;
+        left: 0;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 15px 25px;
+        cursor: pointer;
+        color: white;
+      }
+      .next {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        padding: 15px 25px;
+      }
+    }
+  }
+}

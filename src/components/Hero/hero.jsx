@@ -99,12 +99,14 @@ function Hero() {
               Contact Me
             </motion.button>
           </motion.div>
-          <motion.img
-            variants={textVariants}
-            animate={textVariants.scrollButton}
-            src="/scroll.png"
-            alt="scroll image"
-          />
+          <a href="#Projects">
+            <motion.img
+              variants={textVariants}
+              animate={textVariants.scrollButton}
+              src="/scroll.png"
+              alt="scroll image"
+            />
+          </a>
         </motion.div>
       </div>
       <motion.div

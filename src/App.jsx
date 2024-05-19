@@ -4,6 +4,7 @@ import Contact from "./components/contact/contact";
 import Navbar from "./components/navbar/navbar";
 import Parallax from "./components/parallax/parallax";
 import Projects from "./components/projects/projects";
+import About from "./components/about/about";
 function App() {
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
       <section id="Resume">
         <Parallax type="portfolio"></Parallax>
       </section>
-      <section>About Me</section>
+      <About></About>
       <section id="Contact">
         <Contact></Contact>
       </section>
