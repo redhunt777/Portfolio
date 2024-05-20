@@ -32,33 +32,14 @@ const project = [
 ];
 
 const Single = ({ items }) => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-  const filter = useTransform(
-    scrollYProgress,
-    [0, 0.5, 0.8, 1],
-    ["blur(5px)", "blur(0px)", "blur(3px)", "blur(5px)"]
-  );
-
   return (
     <section className="section1">
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer">
-            <motion.img
-              src={items.img}
-              alt="image of the given website"
-              ref={ref}
-            />
+            <motion.img src={items.img} alt="image of the given website" />
           </div>
-          <motion.div
-            className="textContainer"
-            style={{ y: y, filter: filter }}
-          >
+          <motion.div className="textContainer">
             <h2>{items.title}</h2>
             <p>{items.description}</p>
             <motion.a

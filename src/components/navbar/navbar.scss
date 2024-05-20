@@ -1,13 +1,31 @@
+@import "../../app.scss";
+
 .navbar {
   height: 100px;
 
+  @include mobile {
+    height: 105px;
+  }
+  span {
+    font-size: 20px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
   .wrapper {
     max-width: 1366px;
-    margin: auto 10%;
+    margin: auto 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+
+    @include mobile {
+      justify-content: flex-end;
+      margin: auto 8%;
+    }
   }
 
   .social {
@@ -18,6 +36,11 @@
     img {
       width: 18px;
       height: 18px;
+
+      @include mobile {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 

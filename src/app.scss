@@ -50,3 +50,15 @@ section {
     ),
     linear-gradient(90deg, rgb(12, 12, 29), rgb(12, 12, 29));
 }
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
