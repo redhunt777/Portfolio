@@ -1,7 +1,6 @@
-import { useState } from "react";
-
+import { useState, useEffect, useRef } from "react";
 import "./about.scss";
-import { motion } from "framer-motion";
+import { motion, useTransform, useMotionValue, useSpring } from "framer-motion";
 
 const container = [
   {
@@ -36,20 +35,19 @@ const container = [
   },
 ];
 
-const sectionVariants = {
-  initial: {
-    y: 30,
-  },
-  animate: {
-    y: 0,
-    transition: {
-      duration: 0.7,
-    },
-  },
-};
-
 function About() {
   const [numId, setNumId] = useState(1);
+  const numIdValue = useMotionValue(numId);
+
+  useEffect(() => {
+    numIdValue.set(numId);
+  }, [numId, numIdValue]);
+
+  const X = useTransform(
+    numIdValue,
+    [1, 2, 3, 4],
+    ["0", "-100vw", "-200vw", "-300vw"]
+  );
 
   const handlePrev = () => {
     if (numId > 1) {
@@ -66,30 +64,27 @@ function About() {
     <>
       <div className="about">
         <motion.section>
-          <motion.div
-            className="classContainer"
-            variants={sectionVariants}
-            whileInView={sectionVariants.animate}
-            initial="initial"
-          >
-            {container
-              .filter((item) => item.id === numId)
-              .map((item) => (
-                <motion.div className="container" key={item.id}>
-                  <h1>{item.title}</h1>
-                  <p>{item.description}</p>
-                  {item.images === 0 ? null : (
-                    <img src={item.images} alt="images" />
-                  )}
-                </motion.div>
-              ))}
+          <motion.div className="classContainer">
+            {container.map((item) => (
+              <motion.div
+                className="container"
+                initial={item.id === 1 ? { scaleY: 0.8 } : { scaleY: 0.5 }}
+                whileInView={{ scaleY: 1, transitionDuration: "0.7s" }}
+                key={item.id}
+                style={{
+                  x: X,
+                  transitionDuration: "0.7s",
+                }}
+              >
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                {item.images === 0 ? null : (
+                  <img src={item.images} alt="images" />
+                )}
+              </motion.div>
+            ))}
           </motion.div>
-          <motion.div
-            className="scroll"
-            variants={sectionVariants}
-            whileInView={sectionVariants.animate}
-            initial="initial"
-          >
+          <motion.div className="scroll">
             {numId === 1 ? null : (
               <motion.button
                 className="prev"
