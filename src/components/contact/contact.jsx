@@ -116,13 +116,13 @@ function Contact() {
               <motion.path
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: 3, delay: 2 }}
+                transition={{ duration: 3, delay: 4 }}
                 d="M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2Zm0,30A14,14,0,1,1,32,18,14,14,0,0,1,18,32Z"
               ></motion.path>
               <motion.path
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: 2, delay: 2 }}
+                transition={{ duration: 2, delay: 4 }}
                 d="M28,12.1a1,1,0,0,0-1.41,0L15.49,23.15l-6-6A1,1,0,0,0,8,18.53L15.49,26,28,13.52A1,1,0,0,0,28,12.1Z"
               ></motion.path>
             </svg>
