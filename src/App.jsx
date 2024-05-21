@@ -19,7 +19,7 @@ function App() {
       <section id="Resume">
         <Parallax type="portfolio"></Parallax>
       </section>
-      {/* {/* {/* <About></About> */}
+      <About></About>
       <section id="Contact">
         <Contact></Contact>
       </section>
