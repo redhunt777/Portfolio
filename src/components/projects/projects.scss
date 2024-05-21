@@ -39,6 +39,10 @@
       overflow: hidden;
       top: 200px;
 
+      @include tablet {
+        top: 300px;
+      }
+
       @include mobile {
         top: 145px;
       }
@@ -59,6 +63,10 @@
           flex: 1;
           height: 45%;
           margin-top: 20px;
+
+          @include tablet {
+            height: 25vw;
+          }
 
           @include mobile {
             flex: unset;
