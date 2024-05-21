@@ -82,7 +82,7 @@ function Contact() {
           whileInView={{ opacity: 0 }}
           transition={{ duration: 1, delay: 3 }}
         >
-          <svg width="400px" height="400px" viewBox="0 0 24 24" fill="none">
+          <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none">
             <g>
               <motion.path
                 initial={{ pathLength: 0 }}
@@ -108,8 +108,8 @@ function Contact() {
           <motion.div className="success">
             <svg
               stroke="0.1"
-              width="400px"
-              height="400px"
+              width="100%"
+              height="100%"
               fill="none"
               viewBox="0 0 36 36"
             >
@@ -152,7 +152,7 @@ function Contact() {
           />
           <textarea
             ref={message}
-            rows={8}
+            rows={6}
             name="message"
             placeholder="Message"
           ></textarea>

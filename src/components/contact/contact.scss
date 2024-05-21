@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .contact {
   display: flex;
   height: 100%;
@@ -6,6 +7,15 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
+  overflow: hidden;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+    width: 100vw;
+    justify-content: unset;
+    align-items: unset;
+  }
 
   .textContainer {
     display: flex;
@@ -14,14 +24,32 @@
     flex-direction: column;
     gap: 40px;
 
+    @include mobile {
+      width: 80%;
+      max-width: 80%;
+      margin-top: 15vh;
+      margin-left: 20%;
+      gap: 10px;
+      flex: unset;
+    }
+
     h1 {
       font-size: 50px;
       line-height: 45px;
+
+      @include mobile {
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
 
     .item {
       h2 {
         color: orange;
+
+        @include mobile {
+          font-size: 15px;
+        }
       }
       span {
         font-weight: 300;
@@ -35,12 +63,29 @@
     position: relative;
     z-index: 0;
 
+    @include mobile {
+      max-width: 100%;
+      margin: auto;
+      width: 80%;
+      flex: unset;
+      height: 50%;
+    }
+
     .success {
       background-color: transparent;
       position: absolute;
       margin: auto;
       z-index: 0;
       stroke: green;
+      width: 400px;
+      height: 400px;
+
+      @include mobile {
+        left: 5%;
+        top: 2%;
+        width: 90%;
+        height: 90%;
+      }
     }
 
     .phoneSvg {
@@ -50,6 +95,15 @@
       z-index: 0;
       stroke: orange;
       color: transparent;
+      width: 400px;
+      height: 400px;
+
+      @include mobile {
+        left: 5%;
+        top: 2%;
+        width: 90%;
+        height: 90%;
+      }
     }
 
     form {
@@ -59,6 +113,10 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
+
+      @include mobile {
+        gap: 10px;
+      }
 
       input {
         padding: 10px;
