@@ -11,9 +11,11 @@
   .imageContainer {
     height: 100%;
     position: absolute;
-    top: 0;
+    top: calc(50% - 20vw);
     z-index: 2;
     right: 30px;
+    width: 40vw;
+    height: 40vw;
 
     @include mobile {
       top: 50%;
