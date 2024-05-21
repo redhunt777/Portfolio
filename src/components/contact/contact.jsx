@@ -76,33 +76,35 @@ function Contact() {
         </motion.div>
       </motion.div>
       <div className="formContainer">
-        <motion.div
-          className="phoneSvg"
-          initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0 }}
-          transition={{ duration: 1, delay: 3 }}
-        >
-          <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none">
-            <g>
-              <motion.path
-                initial={{ pathLength: 0 }}
-                whileInView={{ pathLength: 1 }}
-                transition={{ duration: 6 }}
-                stroke={0.2}
-                d="M4,24v-5H0V0h23v19h-9.3L4,24z M2,17h4v3.7l7.3-3.7H21V2H2V17z"
-              />
-            </g>
-            <g>
-              <rect x="5" y="8" width="3" height="3" />
-            </g>
-            <g>
-              <rect x="10" y="8" width="3" height="3" />
-            </g>
-            <g>
-              <rect x="15" y="8" width="3" height="3" />
-            </g>
-          </svg>
-        </motion.div>
+        {success === false && (
+          <motion.div
+            className="phoneSvg"
+            initial={{ opacity: 1 }}
+            whileInView={{ opacity: 0 }}
+            transition={{ duration: 1, delay: 3 }}
+          >
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+              <g>
+                <motion.path
+                  initial={{ pathLength: 0 }}
+                  whileInView={{ pathLength: 1 }}
+                  transition={{ duration: 6 }}
+                  stroke={0.2}
+                  d="M4,24v-5H0V0h23v19h-9.3L4,24z M2,17h4v3.7l7.3-3.7H21V2H2V17z"
+                />
+              </g>
+              <g>
+                <rect x="5" y="8" width="3" height="3" />
+              </g>
+              <g>
+                <rect x="10" y="8" width="3" height="3" />
+              </g>
+              <g>
+                <rect x="15" y="8" width="3" height="3" />
+              </g>
+            </svg>
+          </motion.div>
+        )}
 
         {success && (
           <motion.div className="success">
