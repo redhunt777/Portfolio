@@ -30,7 +30,6 @@ function SideBar() {
 
   const handleClick = () => {
     setOpen((state) => !state);
-    console.log("run");
   };
 
   return (

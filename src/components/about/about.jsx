@@ -15,7 +15,7 @@ const container = [
     id: 2,
     title: "Skills",
     description:
-      "I am proficient in HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I have experience working with Git, GitHub, and Heroku. I have also worked with RESTful APIs and have experience with responsive web design. I am always looking to learn new technologies and expand my skill set.",
+      "I am proficient in HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I have experience working with Git, GitHub. I have also worked with RESTful APIs and have experience with responsive web design. I am always looking to learn new technologies and expand my skill set.",
     images: 0,
   },
 
@@ -23,14 +23,14 @@ const container = [
     id: 3,
     title: "Experience",
     description:
-      "I have completed an internship at a software development company, where I worked on a project to create a web application for managing employee data. I have also completed an internship at a digital marketing company, where I worked on a project to create a website for a client. I am always looking to learn new technologies and expand my skill set.",
+      "I have made several projects using HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I have also take part in several hackathons and coding competitions. I have experience in frontend as well as backened developer",
     images: 0,
   },
   {
     id: 4,
     title: "Education",
     description:
-      "I am currently pursuing a Bachelor's degree in Computer Science and Engineering from the Indian Institute of Information Technology, Allahabad. I have completed my 12th standard from the Central Board of Secondary Education with a score of 92.2%. I have also completed my 10th standard from the Central Board of Secondary Education with a score of 10 CGPA.",
+      "I am currently pursuing a Bachelor's degree in Computer Science and Engineering from the Birla Institute of technology, Mesra. I have completed my 12th standard from the Central Board of Secondary Education with a score of 94.80%. I have also completed my 10th standard from the Central Board of Secondary Education with a score of 10 CGPA.",
     images: 0,
   },
 ];
