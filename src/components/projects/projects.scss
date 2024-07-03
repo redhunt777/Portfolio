@@ -8,6 +8,8 @@
     top: 0px;
     left: 0px;
     z-index: 100;
+    background: #0c0c1d;
+
     padding-top: 50px;
     text-align: center;
     color: orange;
@@ -15,8 +17,7 @@
 
     @include mobile {
       font-size: 20px;
-      top: 70px;
-      padding-top: 0;
+      padding-top: 70px;
     }
 
     .progressBar {
@@ -62,7 +63,7 @@
         .imageContainer {
           flex: 1;
           height: 45%;
-          margin-top: 20px;
+          margin-top: 0px;
 
           @include tablet {
             height: 25vw;

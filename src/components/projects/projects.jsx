@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./projects.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const project = [
   {
@@ -9,25 +9,16 @@ const project = [
     img: "/Screenshot 2024-05-15 002933.png",
     link: "https://hypercosmicedits.web.app/",
     description:
-      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia modi totam, quo veritatis optio ea, iste enim molestiae numquam doloribus, suscipit doloremque accusantium repellat. Tempore neque ipsum quo aut.",
+      "This responsive website, built with HTML, CSS, and JavaScript, showcases their work online and is hosted on Vercel, providing a dynamic and accessible user experience across devices.",
   },
 
   {
     id: 2,
     title: "Coaching Website",
-    img: "/Screenshot 2024-05-15 005443.png",
-    link: "https://redhunt777.github.io/coaching-website/",
+    img: "/download.png",
+    link: "https://coaching-website-frontend.vercel.app/",
     description:
-      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia modi totam, quo veritatis optio ea, iste enim molestiae numquam doloribus, suscipit doloremque accusantium repellat. Tempore neque ipsum quo aut.",
-  },
-
-  {
-    id: 3,
-    img: "/Screenshot 2024-05-15 005841.png",
-    title: "Connecting Campuses",
-    link: "https://github.com/redhunt777/connecting-Campus",
-    description:
-      "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia modi totam, quo veritatis optio ea, iste enim molestiae numquam doloribus, suscipit doloremque accusantium repellat. Tempore neque ipsum quo aut.",
+      "This responsive, user-friendly website is built with React for the frontend, Node.js with Express.js for the backend, and is hosted on Vercel, designed specifically for students to easily download their notes.",
   },
 ];
 

@@ -85,6 +85,9 @@ function Hero() {
                 backgroundColor: "#fff",
                 color: "#000",
               }}
+              onClick={() => {
+                alert("Portfolio will be added soon");
+              }}
             >
               Download Portfolio
             </motion.button>
@@ -94,6 +97,9 @@ function Hero() {
                 cursor: "pointer",
                 backgroundColor: "#fff",
                 color: "#000",
+              }}
+              onClick={() => {
+                window.location.href = "#Contact";
               }}
             >
               Contact Me
