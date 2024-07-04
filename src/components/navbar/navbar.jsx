@@ -45,14 +45,14 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="https://codeforces.com/profile/sarthak_613"
+            href="https://discord.com/users/723121540295688235"
             target="blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
             <img
-              src="/code-forces.png"
-              alt="codeforces icon"
+              src="/discord_2111370.png"
+              alt="discord icon"
               className="icon"
             ></img>
           </motion.a>
