@@ -86,10 +86,13 @@ function Hero() {
                 color: "#000",
               }}
               onClick={() => {
-                alert("Portfolio will be added soon");
+                window.open(
+                  "https://drive.google.com/file/d/1DAZfihgg5H2zySXOd2H7pVfU7AdrKX5x/view",
+                  "_blank"
+                );
               }}
             >
-              Download Portfolio
+              View Portfolio
             </motion.button>
             <motion.button
               variants={textVariants}
