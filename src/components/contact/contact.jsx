@@ -68,12 +68,12 @@ function Contact() {
         </motion.div>
         <motion.div className="item" variants={varients}>
           <h2>Address</h2>
-          <span>Delhi, India</span>
+          <span>Agra, India</span>
         </motion.div>
-        <motion.div className="item" variants={varients}>
+        {/* <motion.div className="item" variants={varients}>
           <h2>Phone</h2>
           <span>+91 123456789</span>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         {success === false && (
