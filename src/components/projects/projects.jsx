@@ -18,7 +18,7 @@ const project = [
     img: "/download.png",
     link: "https://physics-coaching-website.vercel.app/",
     description:
-      "This responsive, user-friendly website is built with React for the frontend, Node.js with Express.js for the backend, and is hosted on Vercel, designed specifically for students to easily download their notes.",
+      "This responsive, user-friendly website is built with React for the frontend, Node.js with Express.js for the backend, and is hosted on Vercel, designed specifically for students to easily download their notes. This website is currently under development.",
   },
 ];
 

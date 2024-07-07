@@ -108,64 +108,66 @@ function Contact() {
 
         {success && (
           <motion.div className="success">
-            <svg
+            <motion.svg
               stroke="0.1"
               width="100%"
               height="100%"
-              fill="none"
+              initial={{ fill: "none" }}
               viewBox="0 0 36 36"
             >
               <motion.path
                 initial={{ pathLength: 0, opacity: 0 }}
-                whileInView={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: 3, delay: 4 }}
+                animate={{ pathLength: 1, opacity: 1 }}
+                transition={{ duration: 3, delay: 0 }}
                 d="M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2Zm0,30A14,14,0,1,1,32,18,14,14,0,0,1,18,32Z"
               ></motion.path>
               <motion.path
                 initial={{ pathLength: 0, opacity: 0 }}
-                whileInView={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: 2, delay: 4 }}
+                animate={{ pathLength: 1, opacity: 1 }}
+                transition={{ duration: 3, delay: 0 }}
                 d="M28,12.1a1,1,0,0,0-1.41,0L15.49,23.15l-6-6A1,1,0,0,0,8,18.53L15.49,26,28,13.52A1,1,0,0,0,28,12.1Z"
               ></motion.path>
-            </svg>
+            </motion.svg>
           </motion.div>
         )}
 
-        <motion.form
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: success ? 0 : 1 }}
-          transition={{ delay: 4 }}
-          ref={form}
-          onSubmit={sendEmail}
-        >
-          <input
-            ref={name}
-            type="text"
-            placeholder="Name"
-            name="name"
-            required
-          />
-          <input
-            ref={email}
-            type="email"
-            placeholder="Email"
-            name="email"
-            required
-          />
-          <textarea
-            ref={message}
-            rows={6}
-            name="message"
-            placeholder="Message"
-          ></textarea>
-          {error.e && (
-            <div className="error">
-              <span>Error:</span> {error.message}
-            </div>
-          )}
+        {!success && (
+          <motion.form
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: success ? 0 : 1 }}
+            transition={{ delay: 4 }}
+            ref={form}
+            onSubmit={sendEmail}
+          >
+            <input
+              ref={name}
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+            />
+            <input
+              ref={email}
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <textarea
+              ref={message}
+              rows={6}
+              name="message"
+              placeholder="Message"
+            ></textarea>
+            {error.e && (
+              <div className="error">
+                <span>Error:</span> {error.message}
+              </div>
+            )}
 
-          <input type="submit" value="Submit" />
-        </motion.form>
+            <input type="submit" value="Submit" />
+          </motion.form>
+        )}
       </div>
     </motion.div>
   );
