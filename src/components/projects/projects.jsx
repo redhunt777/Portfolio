@@ -7,7 +7,7 @@ const project = [
     id: 1,
     title: "Video Editor's Website",
     img: "/Screenshot 2024-05-15 002933.png",
-    link: "https://hypercosmicedits.web.app/",
+    link: "https://hyper-cosmic-edits.vercel.app/",
     description:
       "This responsive website, built with HTML, CSS, and JavaScript, showcases their work online and is hosted on Vercel, providing a dynamic and accessible user experience across devices.",
   },
