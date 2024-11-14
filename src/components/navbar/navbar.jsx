@@ -20,7 +20,7 @@ const Navbar = () => {
             target="blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-          >
+          > 
             <img
               src="/instagram.png"
               alt="instagram icon"

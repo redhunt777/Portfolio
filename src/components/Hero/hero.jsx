@@ -87,7 +87,7 @@ function Hero() {
               }}
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1EKoMaBSc_YHkxm0X2NdF1W_fMqAAwfwb/view?usp=drivesdk",
+                  "https://drive.google.com/file/d/1EAKMFkYAd_5ZG8DIsgWwppDassfb4pJD/view?usp=drive_link",
                   "_blank"
                 );
               }}
