@@ -1,5 +1,5 @@
 import "./hero.scss";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const textVariants = {
   initial: {
     x: -500,
@@ -87,7 +87,7 @@ function Hero() {
               }}
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1EAKMFkYAd_5ZG8DIsgWwppDassfb4pJD/view?usp=drive_link",
+                  "https://drive.google.com/file/d/1uHWp6bimYY41eNiFt6oDVAwNA_U3WaJF/view?usp=sharing",
                   "_blank"
                 );
               }}
