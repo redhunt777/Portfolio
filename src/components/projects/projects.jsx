@@ -5,20 +5,27 @@ import { motion, useScroll, useSpring } from "framer-motion";
 const project = [
   {
     id: 1,
+    title: "Travel Website",
+    img: "/travel.png",
+    link: "https://btechtravelwala.vercel.app/",
+    description:
+      "This responsive travel website, developed using React, CSS, and Framer Motion, features a mail facility and delivers a seamless, engaging user experience across devices, showcasing the startup's innovative travel services",
+  },
+  {
+    id: 2,
+    title: "Booking fresher's pass Website",
+    img: "/Screenshot 2024-12-20 024647.png",
+    link: "https://freshers2024-liart.vercel.app/",
+    description:
+      "This responsive MERN-based website, featuring authentication and a booking system, enables juniors to securely buy passes for the fresher's party while delivering a seamless user experience across devices.",
+  },
+  {
+    id: 3,
     title: "Video Editor's Website",
     img: "/Screenshot 2024-05-15 002933.png",
     link: "https://hyper-cosmic-edits.vercel.app/",
     description:
       "This responsive website, built with HTML, CSS, and JavaScript, showcases their work online and is hosted on Vercel, providing a dynamic and accessible user experience across devices.",
-  },
-
-  {
-    id: 2,
-    title: "Coaching Website",
-    img: "/download.png",
-    link: "https://physics-coaching-website.vercel.app/",
-    description:
-      "This responsive, user-friendly website is built with React for the frontend, Node.js with Express.js for the backend, and is hosted on Vercel, designed specifically for students to easily download their notes. This website is currently under development.",
   },
 ];
 
