@@ -7,7 +7,7 @@ const project = [
     id: 1,
     title: "Travel Website",
     img: "/travel.png",
-    link: "https://btechtravelwala.vercel.app/",
+    link: "https://explorifytrips.vercel.app/",
     description:
       "This responsive travel website, developed using React, CSS, and Framer Motion, features a mail facility and delivers a seamless, engaging user experience across devices, showcasing the startup's innovative travel services",
   },
@@ -15,7 +15,7 @@ const project = [
     id: 2,
     title: "Booking fresher's pass Website",
     img: "/Screenshot 2024-12-20 024647.png",
-    link: "https://freshers2024-liart.vercel.app/",
+    link: "https://mech-fresher.onrender.com/",
     description:
       "This responsive MERN-based website, featuring authentication and a booking system, enables juniors to securely buy passes for the fresher's party while delivering a seamless user experience across devices.",
   },
